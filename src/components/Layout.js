@@ -59,7 +59,7 @@ export default ({ children, meta, title }) => {
               {title}
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
-              {/* Add font link tags here */}
+              <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500;700&display=swap" rel="stylesheet"/>
             </Helmet>
 
             <Meta

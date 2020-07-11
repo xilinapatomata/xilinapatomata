@@ -5,8 +5,8 @@
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
-  --font-system: system-ui; /* postcssPresetEnv */
+  --font-primary: 'Alegreya Sans','Open Sans', sans-serif;
+  --font-system: 'Alegreya Sans', system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
 }
 

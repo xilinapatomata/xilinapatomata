@@ -61,7 +61,6 @@ export default ({ children, meta, title }) => {
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
               <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500;700&display=swap" rel="stylesheet"/>
             </Helmet>
-
             <Meta
               googleTrackingId={googleTrackingId}
               absoluteImageUrl={

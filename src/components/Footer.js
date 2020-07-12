@@ -1,5 +1,5 @@
 import React from 'react'
-//import InstagramFeed from './InstagramFeed'
+import InstagramFeed from './InstagramFeed'
 import './Footer.css'
 
 export default () => (
@@ -9,13 +9,13 @@ export default () => (
       <a href="https://instagram.com/giapoutzis_t/">@giapoutzis_t</a>
     </h2>
     <br />
-    {/* <InstagramFeed count="8" /> */}
-    <div className="powr-social-feed" id="cc47997c_1594487714"></div><script src="https://www.powr.io/powr.js?platform=react"></script>
+    <InstagramFeed count="8" />
+    
+
     <footer className="footer">
       <div className="container taCenter">
         <span>
-          © Copyright {new Date().getFullYear()} All rights reserved. Crafted by{' '}
-          <a href="https://thriveweb.com.au/">Thrive</a>.
+          © Copyright {new Date().getFullYear()} All rights reserved.
         </span>
       </div>
     </footer>

@@ -5,8 +5,8 @@ title: Γιαπουτζής
 featuredImage: 'https://ucarecdn.com/63002a64-d8dc-4479-b732-efc34acaeb37/'
 subtitle: '## ξύλινα πατώματα - laminate'
 meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  description: 'Τοποθετούμε ξύλινα πατώματα, Laminate deck γρήγορα-οικονομικά-ποιοτικά'
+  title: Ξύλινα πατώματα - ξύλινα δάπεδα - Laminate  Αποστόλης Γιαπουτζής
 ---
 Αναλαμβάνουμε την τοποθέτηση ξύλινων δαπέδων, πατωμάτων laminate, δαπέδων εξωτερικού χώρου, deck.
 

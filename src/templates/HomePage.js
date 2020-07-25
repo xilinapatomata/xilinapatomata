@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
+import Slider from '../components/Slider'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 

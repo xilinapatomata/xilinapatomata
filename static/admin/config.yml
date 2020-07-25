@@ -206,8 +206,9 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }
+          - { label: "Slider", name: "slider", widget: "object", fields: [{label: "Images", name: "array", widget: list, fields: [{label: "Original", name: "original", widget: "string"}, {label: "description", name: "description", widget: "string", required: false}]}]}
+          - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Body, name: body, widget: markdown }
           - label: 'Accordion'
             name: 'accordion'

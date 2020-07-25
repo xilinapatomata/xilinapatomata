@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
       preview: true
     files:
       - file: 'content/pages/contact.md'
-        label: 'Contact Page'
+        label: 'Επικοινωνία'
         name: 'contact-page'
         fields:
           - {
@@ -99,7 +99,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/blog.md'
-        label: 'Blog Page'
+        label: 'Δουλειές'
         name: 'blog-page'
         fields:
           - {
@@ -138,7 +138,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/components.md'
-        label: 'Components Page'
+        label: 'Υπηρεσίες'
         name: 'components-page'
         fields:
           - {
@@ -195,7 +195,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/home.md'
-        label: 'Home Page'
+        label: 'Αρχική'
         name: 'home-page'
         fields:
           - {
@@ -288,6 +288,13 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: Template, name: template, widget: hidden, default: SinglePost }
+      - label: 'Pictures'
+            name: 'pictures'
+            widget: 'list'
+            fields:
+              - { name: image, label: Image, widget: image }
+              - { name: alt, label: Alt, widget: string }
+              - { name: title, label: Title, widget: string, required: false }
       - { label: Title, name: title, widget: string }
       - label: 'Status'
         name: 'status'

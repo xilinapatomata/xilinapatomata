@@ -10,9 +10,9 @@ class Form extends React.Component {
     name: 'Simple Form Ajax',
     subject: '', // optional subject of the notification email
     action: '',
-    successMessage: 'Thanks for your enquiry, we will get back to you soon',
+    successMessage: 'Λάβαμε το μήνυμά σας, ευχαριστούμε',
     errorMessage:
-      'There is a problem, your message has not been sent, please try contacting us via email'
+      'Το μήνυμά σας δεν μπόρεσε να σταλεί, προσπαθήστε να επικοινωνήσετε τηλεφωνικά μαζί μας'
   }
 
   state = {
@@ -72,49 +72,62 @@ class Form extends React.Component {
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
           )}
-          <div className="Form--Group">
-            <label className="Form--Label">
-              <input
-                className="Form--Input Form--InputText"
-                type="text"
-                placeholder="Firstname"
-                name="firstname"
-                required
-              />
-              <span>Firstname</span>
-            </label>
-            <label className="Form--Label">
-              <input
-                className="Form--Input Form--InputText"
-                type="text"
-                placeholder="Lastname"
-                name="lastname"
-                required
-              />
-              <span>Lastname</span>
-            </label>
-          </div>
-          <fieldset>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="male"
-                defaultChecked
-              />
-              <span>Male</span>
-            </label>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="female"
-              />
-              <span>Female</span>
-            </label>
-          </fieldset>
+          <div className="Form--Label">Τι είδους εργασία χρειάζεσαι;</div>
+          <label className="Form--Label has-arrow">
+            <select
+              className="Form--Input Form--Select"
+              name="type"
+              defaultValue="Εγκατάσταση / Αντικατάσταση"
+              required
+            >
+              <option>Εγκατάσταση / Αντικατάσταση</option>
+              <option>Συντήρηση / Επισκευή</option>
+            </select>
+          </label>
+          <div className="Form--Label">Με τι είδους δάπεδο θα γίνει η εργασία;</div>
+          <label className="Form--Label has-arrow">
+            <select
+              className="Form--Input Form--Select"
+              name="type"
+              defaultValue="Δάπεδο τύπου Laminate"
+              required
+            >
+              <option>Ξύλινο δάπεδο μασίφ ή προγυαλισμένο</option>
+              <option>Δάπεδο τύπου Laminate</option>
+              <option>Βιομηχανικό/Σταμπωτό δάπεδο</option>
+              <option>Deck εξωτερικού χώρου</option>
+            </select>
+          </label>
+          <div className="Form--Label">Πόσα τετραγωνικά είναι οι επιφάνειες που θα γίνουν οι εργασίες;</div>
+          <label className="Form--Label has-arrow">
+            <select
+              className="Form--Input Form--Select"
+              name="type"
+              defaultValue="Έως 15 τ.μ."
+              required
+            >
+
+              <option>Έως 15 τ.μ.</option>
+              <option>16 τ.μ. - 50 τ.μ.</option>
+              <option>51 τ.μ. - 100 τ.μ.</option>
+              <option>100 τ.μ. και άνω</option>
+            </select>
+          </label>
+          <div className="Form--Label">Πότε θα ήθελες να ξεκινήσεις τις εργασίες;</div>
+          <label className="Form--Label has-arrow">
+            <select
+              className="Form--Input Form--Select"
+              name="type"
+              defaultValue="Άμεσα"
+              required
+            >
+
+              <option>Άμεσα</option>
+              <option>Μέσα στις επόμενες 10 ημέρες</option>
+              <option>Μέσα στις επόμενες 30 ημέρες</option>
+              <option>Δεν έχω συγκεκριμένο χρονικό προγραμματισμό</option>
+            </select>
+          </label>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
@@ -123,32 +136,7 @@ class Form extends React.Component {
               name="emailAddress"
               required
             />
-            <span>Email address</span>
-          </label>
-          <label className="Form--Label has-arrow">
-            <select
-              className="Form--Input Form--Select"
-              name="type"
-              defaultValue="Type of Enquiry"
-              required
-            >
-              <option disabled hidden>
-                Type of Enquiry
-              </option>
-              <option>Need to know more</option>
-              <option>Found a bug</option>
-              <option>Want to say hello</option>
-            </select>
-          </label>
-          <label className="Form--Label">
-            <textarea
-              className="Form--Input Form--Textarea Form--InputText"
-              placeholder="Message"
-              name="message"
-              rows="10"
-              required
-            />
-            <span>Message</span>
+            <span>Email</span>
           </label>
           <label className="Form--Label Form-Checkbox">
             <input
@@ -156,7 +144,7 @@ class Form extends React.Component {
               name="newsletter"
               type="checkbox"
             />
-            <span>Get news updates</span>
+            <span>Αποδέχομαι τους Όρους και Προϋποθέσεις του xilinapatomata.gr</span>
           </label>
           <div
             className="g-recaptcha"
@@ -167,7 +155,7 @@ class Form extends React.Component {
           <input
             className="Button Form--SubmitButton"
             type="submit"
-            value="Enquire"
+            value="Υποβολη"
             disabled={this.state.disabled}
           />
         </form>
